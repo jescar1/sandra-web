@@ -96,7 +96,7 @@ export function Navbar() {
             </Button>
             <Button className="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 gap-2 shadow-lg hover:shadow-xl transition-all">
               <Phone className="w-4 h-4" />
-              <span className="hidden xl:inline">+1 813-820-8028</span>
+              <span className="hidden xl:inline">hola</span>
               <span className="xl:hidden">Call</span>
             </Button>
           </div>
