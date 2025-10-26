@@ -58,13 +58,13 @@ export function Services() {
           className="text-center mb-16"
         >
           <div className="inline-block px-4 py-2 bg-blue-100 text-blue-900 rounded-full mb-4">
-            Servicios Profesionales
+            Professional Services
           </div>
           <h2 className="text-4xl lg:text-5xl text-slate-900 mb-4">
-            Soluciones Financieras Completas
+            Comprehensive Financial Solutions
           </h2>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Desde tu primera casa hasta inversiones comerciales, te acompañamos en cada paso
+            From your first home to commercial investments, we support you every step of the way
           </p>
         </motion.div>
 

@@ -130,7 +130,7 @@ export function About() {
             </div>
             <div className="w-px bg-slate-300"></div>
             <div className="text-center">
-              <div className="text-2xl text-blue-900 mb-1">Estado</div>
+              <div className="text-2xl text-blue-900 mb-1">State</div>
               <div className="text-slate-600">Florida</div>
             </div>
           </div>

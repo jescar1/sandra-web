@@ -44,7 +44,7 @@ export function Calculator() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-md mb-6">
             <CalcIcon className="w-4 h-4 text-blue-900" />
-            <span className="text-blue-900">Calculadora de Hipoteca</span>
+            <span className="text-blue-900">Mortgage Calculator</span>
           </div>
           <h2 className="text-4xl lg:text-5xl text-slate-900 mb-6">
             Calculate your Monthly Payment
@@ -118,7 +118,7 @@ export function Calculator() {
                 <div className="flex justify-between items-center mb-4">
                   <Label className="flex items-center gap-2">
                     <Percent className="w-4 h-4 text-emerald-600" />
-                    Interest rate
+                    Interest Rate
                   </Label>
                   <div className="text-2xl text-emerald-600">
                     {interestRate.toFixed(2)}%
@@ -153,7 +153,7 @@ export function Calculator() {
                       }`}
                     >
                       <div className="text-2xl mb-1">{term}</div>
-                      <div className="text-sm opacity-80">años</div>
+                      <div className="text-sm opacity-80">Years</div>
                     </button>
                   ))}
                 </div>
@@ -190,7 +190,7 @@ export function Calculator() {
               <div className="text-3xl text-slate-900 mb-1">
                 ${totalPayment.toLocaleString(undefined, { maximumFractionDigits: 0 })}
               </div>
-              <div className="text-sm text-slate-500">Over {loanTerm} years</div>
+              <div className="text-sm text-slate-500">Over {loanTerm} Years</div>
             </div>
 
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100">

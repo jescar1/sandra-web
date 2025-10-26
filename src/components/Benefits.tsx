@@ -51,7 +51,7 @@ export function Benefits() {
           className="text-center mb-16"
         >
           <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-full mb-4">
-            Beneficios
+            Benefits
           </div>
           <h2 className="text-4xl lg:text-5xl text-white mb-4">
             Why Choose Cardenas Mortgage Group?

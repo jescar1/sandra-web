@@ -89,16 +89,19 @@ export function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <Button
-              variant="ghost"
-              className="text-slate-700 hover:text-blue-900 hover:bg-blue-50"
-            >
-              Apply Now
-            </Button>
-            <Button className="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 gap-2 shadow-lg hover:shadow-xl transition-all">
-              <Phone className="w-4 h-4" />
-              <span className="hidden xl:inline">+1 813-820-8028</span>
-              <span className="xl:hidden">Call</span>
-            </Button>
+  variant="ghost"
+  className="text-slate-700 hover:text-blue-900 hover:bg-blue-50"
+  onClick={() => scrollToSection("contact")}
+>
+  Apply Now
+</Button>
+<a href="tel:+18138208028">
+  <Button className="bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 gap-2 shadow-lg hover:shadow-xl transition-all">
+    <Phone className="w-4 h-4" />
+    <span className="hidden xl:inline">+1 813-820-8028</span>
+    <span className="xl:hidden">Call</span>
+  </Button>
+</a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -142,19 +145,18 @@ export function Navbar() {
 
               <div className="pt-4 space-y-3 border-t border-slate-100 mt-4">
                 <Button
-                  variant="outline"
-                  className="w-full"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Apply Now
-                </Button>
-                <Button
-                  className="w-full bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 gap-2 shadow-lg"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  <Phone className="w-4 h-4" />
-                  <span>+1 813-903-0657</span>
-                </Button>
+  variant="outline"
+  className="w-full"
+  onClick={() => scrollToSection("contact")}
+>
+  Apply Now
+</Button>
+<a href="tel:+18139030657" className="block w-full">
+  <Button className="w-full bg-gradient-to-r from-blue-900 to-blue-700 hover:from-blue-800 hover:to-blue-600 gap-2 shadow-lg">
+    <Phone className="w-4 h-4" />
+    <span>+1 813-903-0657</span>
+  </Button>
+</a>
               </div>
             </div>
           </motion.div>

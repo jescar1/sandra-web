@@ -1,7 +1,7 @@
 import { ArrowRight, Star, Play, CheckCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
-import { AnimatedHouses } from "./AnimatedHouses";
+
 
 export function Hero() {
   return (
@@ -12,7 +12,7 @@ export function Hero() {
       </div>
 
       {/* Animated Houses Background */}
-      <AnimatedHouses />
+      
 
       <div className="relative max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
