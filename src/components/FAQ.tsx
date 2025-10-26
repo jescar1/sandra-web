@@ -99,9 +99,11 @@ export function FAQ() {
             <p className="text-slate-600 mb-6">
               I'm here to answer all your questions personally
             </p>
-            <button className="text-blue-900 hover:text-blue-700 transition-colors">
-              Contact me directly →
-            </button>
+            <a href="tel:+18138208028">
+  <button className="text-blue-900 hover:text-blue-700 transition-colors">
+    Contact me directly →
+  </button>
+</a>
           </div>
         </motion.div>
       </div>

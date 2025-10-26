@@ -2,6 +2,16 @@ import { TrendingUp, FileText, Award, GraduationCap, Home, RefreshCw } from "luc
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
 
+
+const scrollToSection = (id: string) => {
+  const element = document.getElementById(id);
+  if (element) {
+    const offset = 80;
+    const top = element.getBoundingClientRect().top + window.pageYOffset - offset;
+    window.scrollTo({ top, behavior: "smooth" });
+  }
+};
+
 const services = [
   {
     icon: Home,
@@ -120,11 +130,21 @@ export function Services() {
               Request a free consultation and discover how we can help you achieve your financial goals
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 shadow-xl">
+              <Button
+                size="lg"
+                className="bg-amber-600 hover:bg-amber-700 shadow-xl"
+                onClick={() => scrollToSection("contact")}
+              >
                 Commercial Application
               </Button>
-              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
-                Residential Application
+
+              <Button
+               size="lg"
+               variant="outline"
+                 className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
+                  onClick={() => scrollToSection("contact")}
+>
+                   Residential Application
               </Button>
             </div>
           </div>

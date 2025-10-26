@@ -65,17 +65,32 @@ export function CTA() {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700 shadow-xl shadow-amber-600/30 group">
-                <Phone className="w-5 h-5 mr-2" />
-                Call Now
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
-                <Calendar className="w-5 h-5 mr-2" />
-                Schedule Appointment
-              </Button>
-            </div>
-          </motion.div>
+              <a href="tel:+18138208028">
+                <Button size="lg" className="bg-amber-600 hover:bg-amber-700 shadow-xl shadow-amber-600/30 group">
+                  <Phone className="w-5 h-5 mr-2" />
+                  Call Now
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
+
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
+               onClick={() => {
+                 const el = document.getElementById("contact");
+                   if (el) {
+                 const offset = 80;
+                    const top = el.getBoundingClientRect().top + window.pageYOffset - offset;
+                     window.scrollTo({ top, behavior: "smooth" });
+                     }
+                     }}
+                      >
+                           <Calendar className="w-5 h-5 mr-2" />
+                     Schedule Appointment
+                      </Button>
+                                    </div>
+                           </motion.div>
 
           {/* Right - Feature Cards */}
           <motion.div
