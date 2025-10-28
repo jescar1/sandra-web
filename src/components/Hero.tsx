@@ -14,7 +14,13 @@ const Hero: React.FC = () => {
   }, []);
 
   const mobileStyles = {
-    content: { flexDirection: 'column', textAlign: 'center' },
+    content: {
+      flexDirection: 'column',
+      textAlign: 'center',
+      alignItems: 'center',
+      justifyContent: 'center',
+      display: 'flex',
+    },
     textBlock: {
       maxWidth: '100%',
       alignItems: 'center',
@@ -23,21 +29,48 @@ const Hero: React.FC = () => {
       paddingTop: '2rem',
     },
     heading: { order: 1 },
-    photoBlock: { order: 2, marginTop: '1rem' },
+    photoBlock: {
+      order: 2,
+      marginTop: '1rem',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '100%',
+      maxWidth: '300px',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      textAlign: 'center',
+    },
     description: { order: 3, marginTop: '1rem' },
-    stats: { order: 4, marginTop: '1rem', justifyContent: 'center' },
-    buttons: { order: 5, marginTop: '1rem', justifyContent: 'center' },
+    stats: {
+      order: 4,
+      marginTop: '1rem',
+      justifyContent: 'center',
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '1rem',
+    },
+    buttons: {
+      order: 5,
+      marginTop: '1rem',
+      justifyContent: 'center',
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '1rem',
+    },
   };
 
   const desktopStyles = {
-    content: {},
+    content: {
+      justifyContent: 'center', // ✅ centrado en desktop también
+    },
     textBlock: {},
     heading: {},
     photoBlock: {},
     description: {},
     stats: {},
     buttons: {},
-    
   };
 
   const responsive = isMobile ? mobileStyles : desktopStyles;
@@ -69,17 +102,13 @@ const Hero: React.FC = () => {
               </div>
             )}
             <div style={{ ...styles.buttons, ...responsive.buttons, ...fadeInUp('0.5s') }}>
-             <a href="tel:+573001234567" style={styles.primary}>
-  Apply Now
-</a>
-              <a href="#testimonials" style={styles.secondary}>
-  Watch Testimonials
-</a>
+              <a href="tel:+573001234567" style={styles.primary}>Apply Now</a>
+              <a href="#testimonials" style={styles.secondary}>Watch Testimonials</a>
             </div>
           </div>
           <div style={{ ...styles.photoBlock, ...responsive.photoBlock, ...fadeInUp('0.2s') }}>
             <div style={styles.photoFrame}>
-              <img src="/sa.jpg" alt="Lorena Eardenas" style={styles.photo} />
+              <img src="/sa.jpg" alt="Sandra Cardenas" style={styles.photo} />
             </div>
             <div style={styles.card}>
               <p style={styles.name}>Sandra Cardenas</p>
@@ -124,27 +153,25 @@ const styles: { [key: string]: React.CSSProperties } = {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'center', // ✅ centrado en desktop
     gap: '3rem',
     flexWrap: 'wrap',
     textAlign: 'left',
   },
   textBlock: {
-  flex: '0 1 60%', // 👈 ocupa solo el 60% del ancho
-  maxWidth: '600px',
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-},
-  
- photoBlock: {
-  flex: '0 1 40%', // 👈 ocupa el 40% restante
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'center',
-  alignItems: 'center', // 👈 alinea a la izquierda dentro del bloque
-  marginLeft: '2rem',       // 👈 lo empuja hacia el centro desde el borde derecho
-},
+    flex: '0 1 60%',
+    maxWidth: '600px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+  },
+  photoBlock: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: '0 auto', // ✅ centrado horizontal
+  },
   photoFrame: {
     borderRadius: '10px',
     padding: '4px',
@@ -174,6 +201,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     boxShadow: '#2c2c2cff 0px 0px 10px',
     display: 'inline-block',
     textAlign: 'center',
+    margin: '0 auto',
     marginTop: '0.5rem',
   },
   name: {
@@ -215,6 +243,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     marginBottom: '2rem',
     justifyContent: 'flex-start',
     flexWrap: 'wrap',
+ 
   },
   stat: {
     backgroundColor: '#172f72ff',
@@ -225,6 +254,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '1rem',
     backdropFilter: 'none',
     boxShadow: '#2c2c2cff 0px 0px 10px',
+ 
   },
   buttons: {
     display: 'flex',
