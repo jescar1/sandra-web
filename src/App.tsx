@@ -12,7 +12,7 @@ import { Calculator } from "./components/Calculator";
 import { FAQ } from "./components/FAQ";
 import { TrustIndicators } from "./components/TrustIndicators";
 import { Resources } from "./components/Resources";
-import { Partners } from "./components/Partners";
+
 
 export default function App() {
   return (
@@ -21,10 +21,6 @@ export default function App() {
 
       <section id="home">
           <Hero />
-        </section>
-
-      <section id="partners">
-          <Partners />
         </section>
 
       <section id="trust-indicators">
