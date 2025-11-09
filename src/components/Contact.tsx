@@ -11,10 +11,10 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const socialLinks = [
-  { name: "Facebook", icon: Facebook, color: "from-blue-600 to-blue-700", href: "#" },
-  { name: "Instagram", icon: Instagram, color: "from-pink-500 to-purple-600", href: "#" },
-  { name: "LinkedIn", icon: Linkedin, color: "from-blue-500 to-blue-600", href: "#" },
-  { name: "WhatsApp", icon: MessageCircle, color: "from-green-500 to-green-600", href: "#" },
+  { name: "Facebook", icon: Facebook, color: "from-blue-600 to-blue-700", href: "https://www.facebook.com/CardenasHomeLoans" },
+  { name: "Instagram", icon: Instagram, color: "from-pink-500 to-purple-600", href: "https://www.instagram.com/cardenashomeloans/" },
+  { name: "LinkedIn", icon: Linkedin, color: "from-blue-500 to-blue-600", href: "https://www.linkedin.com/in/sandra-cardenas-313b5131/" },
+  { name: "WhatsApp", icon: MessageCircle, color: "from-green-500 to-green-600", href: "https://wa.me/+18138208028" },
 ];
 
 export function Contact() {
@@ -113,10 +113,10 @@ export function Contact() {
                 <div>
                   <div className="text-white mb-2">Phone</div>
                   <a
-                    href="tel:+18139030657"
+                    href="tel:+18138208028"
                     className="text-blue-200 hover:text-white transition-colors text-lg"
                   >
-                    +1 813-903-0657
+                    +1 813-820-8028
                   </a>
                   <p className="text-blue-300 text-sm mt-1">
                     Mon - Fri: 9AM - 6PM
