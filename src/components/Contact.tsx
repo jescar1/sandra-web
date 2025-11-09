@@ -70,20 +70,18 @@ export function Contact() {
               <div className="w-full mt-16">
                 <iframe
                   src="https://api.leadconnectorhq.com/widget/form/kzzdvfVPer0FaYKWTp9J"
-                  id="inline-kzzdvfVPer0FaYKWTp9J" 
+                  id="inline-kzzdvfVPer0FaYKWTp9J"
                   title="Website Form"
                   style={{
                     width: "100%",
-                    /* Mantenemos una altura fija para evitar el scroll. 
-                       Aumenta este valor si el formulario no cabe en 800px. */
-                    height: "800px", 
+                    height: "800px",
                     border: "none",
                     borderRadius: "12px",
-                    overflow: "hidden", 
+                    overflow: "hidden",
                   }}
-                  scrolling="no" 
+                  scrolling="no"
                   allow="fullscreen"
-                  data-layout="{'id':'INLINE'}" 
+                  data-layout="{'id':'INLINE'}"
                   data-trigger-type="alwaysShow"
                   data-trigger-value=""
                   data-activation-type="alwaysActivated"
@@ -91,7 +89,7 @@ export function Contact() {
                   data-deactivation-type="neverDeactivate"
                   data-deactivation-value=""
                   data-form-name="Website Form"
-                  data-height="undefined" // Usando el valor que proporcionaste
+                  data-height="undefined"
                   data-layout-iframe-id="inline-kzzdvfVPer0FaYKWTp9J"
                   data-form-id="kzzdvfVPer0FaYKWTp9J"
                 ></iframe>
@@ -190,31 +188,38 @@ export function Contact() {
           </motion.div>
         </div>
 
-        {/* FOOTER */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center pt-12 border-t border-white/20"
-        >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-xl">
-              <span className="text-blue-900">CM</span>
-            </div>
-            <div className="text-left">
-              <div className="text-white">SANDRA CARDENAS</div>
-              <div className="text-amber-400 text-xs tracking-wider">
-                MORTGAGE GROUP
-              </div>
-            </div>
-          </div>
-          <p className="text-blue-200 mb-2">
-            NMLS #183516 | Licensed in Florida
-          </p>
-          <p className="text-blue-300 text-sm">
-            © 2025 Cardenas Mortgage Group. All rights reserved.
-          </p>
-        </motion.div>
+        {/* FOOTER ACTUALIZADO */}
+<motion.footer
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  viewport={{ once: true }}
+  className="pt-10 border-t border-white/20 bg-gradient-to-b from-blue-900 to-blue-950"
+>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-blue-200 text-sm px-6 pb-6 text-center">
+    {/* LOGO */}
+    <img
+      src="/cardenas-logo.jpg"
+      alt="Cardenas Mortgage Group Logo"
+      className="object-contain"
+      style={{
+        width: "150px",
+        height: "auto",
+        borderRadius: "10px",
+      }}
+    />
+
+    {/* LICENCIA */}
+    <p className="text-blue-200">
+      NMLS #1183490 | Licensed in Florida
+    </p>
+
+    {/* COPYRIGHT */}
+    <p className="text-blue-300">
+      © 2025 Cardenas Mortgage Group. All rights reserved.
+    </p>
+  </div>
+</motion.footer>
+
       </div>
     </section>
   );

@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Shield, Award, Users, TrendingUp, CheckCircle, Clock } from "lucide-react";
 
 const indicators = [
-  { icon: Shield, value: "NMLS #183516", label: "Verified License" },
+  { icon: Shield, value: "NMLS #1183490", label: "Verified License" },
   { icon: Award, value: "10+ Years", label: "Experience" },
   { icon: Users, value: "500+", label: "Families Served" },
   { icon: TrendingUp, value: "$250M+", label: "Loans Processed" },

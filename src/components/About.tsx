@@ -126,7 +126,7 @@ export function About() {
           <div className="flex flex-wrap justify-center gap-8">
             <div className="text-center">
               <div className="text-2xl text-blue-900 mb-1">NMLS</div>
-              <div className="text-slate-600">#183516</div>
+              <div className="text-slate-600">#1183490</div>
             </div>
             <div className="w-px bg-slate-300"></div>
             <div className="text-center">

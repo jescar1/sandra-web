@@ -11,7 +11,7 @@ import { CTA } from "./components/CTA";
 import { Calculator } from "./components/Calculator";
 import { FAQ } from "./components/FAQ";
 import { TrustIndicators } from "./components/TrustIndicators";
-import { Resources } from "./components/Resources";
+
 
 
 export default function App() {
@@ -46,10 +46,7 @@ export default function App() {
           <About />
         </section>
 
-      <section id="resources">
-          <Resources />
-        </section>
-
+   
       <FAQ />
       <CTA />
       <section id="contact">

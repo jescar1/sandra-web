@@ -108,11 +108,11 @@ const Hero: React.FC = () => {
           </div>
           <div style={{ ...styles.photoBlock, ...responsive.photoBlock, ...fadeInUp('0.2s') }}>
             <div style={styles.photoFrame}>
-              <img src="/sa.jpg" alt="Sandra Cardenas" style={styles.photo} />
+              <img src="/sandra.jpeg" alt="Sandra Cardenas" style={styles.photo} />
             </div>
             <div style={styles.card}>
               <p style={styles.name}>Sandra Cardenas</p>
-              <p style={styles.nmls}>NMLS #051799</p>
+              <p style={styles.nmls}>NMLS #1183490</p>
             </div>
           </div>
         </div>
